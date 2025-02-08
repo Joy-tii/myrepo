@@ -6,35 +6,39 @@
     <title>mylove</title>
     <style>
         body{
-            background-image: url(https://i.pinimg.com/736x/7f/e0/44/7fe044a7430063a81980e2224dcf0ad8.jpg);
+            background-image: url(./pexels-nietjuhart-776635.jpg);
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             padding: 50px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100vh;
         }
         button{
             background-color:rgb(241, 197, 181) ;
             color: rgb(191, 2, 2);
             padding: 10px;
             border-radius: 10px;
-            margin: 10px;
             border: 2px solid rgb(243, 39, 39);
-        }
-        a{
-            text-decoration: none;
-            color: rgb(165, 0, 0);
         }
     </style>
 </head>
 <body>
     <h1 style="color: rgb(0, 0, 0);">Hi My love!!!</h1>
-   
-  <button><a href="./day1.html">Happy Rose day</a></button>
-  <button><a href="./day2.html">Happy propose day</a></button>
+ <h2 id="proposal" style="color: rgb(15, 15, 15);"></h2>
+
+ <BUtton onclick="myaccepted()">ACCEPTED❤️</BUtton>
+
+ <script>
+   const accepted = setInterval(myproposal , 2000);
+
+   function myproposal(){
+    document.getElementById("proposal").innerHTML += "I LOVE YOU ❤️ ! <br> HAPPY ROSE DAY 🌹❤️ <br>"
+   }
+
+   function myaccepted (){
+    clearInterval(accepted);
+    alert("Thank You ❤️")
+   }
 
  </script>
 
